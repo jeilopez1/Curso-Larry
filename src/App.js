@@ -1,7 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import Login from './scenes/login/login';
+import Login from './scenes/login/Login';
 import VerifiedCode from './scenes/VerifiedCode/VerifiedCode';
+import Home from './scenes/home/Home';
 // lowerCamelCase = variables, funciones, import assets
 //UpperCamelCase = archivos, hook
 //snake_case = Base de datos
@@ -23,9 +24,7 @@ function App() {
         <VerifiedCode handlerSetViewCode={setViewCode} handlerSetViewHome={setViewHome}/>
         }
         {viewHome &&
-        <div>
-          <h2>Ingreso al inicio</h2>
-        </div>
+        <Home></Home>
         }
       </header>
     </div>
